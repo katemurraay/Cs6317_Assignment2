@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlayerData>
+
+    <player>
+        <id>1</id>
+        <age>31</age>
+        <name>David de Gea</name>
+        <position>Goalkeeper</position>
+        <appearances>477</appearances>
+        <dob>07/11/1990</dob>
+        <joinedDate>29/06/2011</joinedDate>
+        <country>Spain</country>
+        <image>david.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/david-de-gea</url>
+        <totalGoals>164</totalGoals>
+    </player>
+    <player>
+        <id>2</id>
+        <age>27</age>
+        <name>Victor Lindelöf</name>
+        <position>Defender</position>
+        <appearances>188</appearances>
+        <dob>17/06/1994</dob>
+        <joinedDate>01/07/2017</joinedDate>
+        <country>Sweden</country>
+        <image>victor.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/victor-lindelof</url>
+        <totalGoals>3</totalGoals>
+    </player>
+
+    <player>
+        <id>3</id>
+        <age>27</age>
+        <name>Eric Bailly</name>
+        <position>Defender</position>
+        <appearances>113</appearances>
+        <dob>12/04/1994</dob>
+        <joinedDate>08/06/2016</joinedDate>
+        <country>Ivory Coast</country>
+        <image>bailly.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/eric-bailly</url>
+        <totalGoals>1</totalGoals>
+    </player>
+    <player>
+        <id>4</id>
+        <age>30</age>
+        <name>Phil Jones</name>
+        <position>Defender</position>
+        <appearances>226</appearances>
+        <dob>21/02/1992</dob>
+        <joinedDate>01/07/2011</joinedDate>
+        <country>England</country>
+        <image>jones.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/phil-jones</url>
+        <totalGoals>6</totalGoals>
+    </player>
+    <player>
+        <id>5</id>
+        <age>29</age>
+        <name>Harry Maguire</name>
+        <position>Defender</position>
+        <appearances>137</appearances>
+        <dob>05/03/1993</dob>
+        <joinedDate>05/08/2019</joinedDate>
+        <country>England</country>
+         <image>maguire.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/harry-maguire</url>
+        <totalGoals>7</totalGoals>
+    </player>
+    <player>
+        <id>6</id>
+        <age>29</age>
+        <name>Paul Pogba</name>
+        <position>Midfielder</position>
+        <appearances>228</appearances>
+        <dob>15/03/1993</dob>
+        <joinedDate>08/08/2016</joinedDate>
+        <country>France</country>
+        <image>pogba.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/paul-pogba</url>
+        <totalGoals>39</totalGoals>
+    </player>
+    <player>
+        <id>7</id>
+        <age>37</age>
+        <name>Cristiano Ronaldo</name>
+        <position>Forward</position>
+        <appearances>323</appearances>
+        <dob>05/02/1985</dob>
+        <joinedDate>31/08/2021</joinedDate>
+        <country>Portugal</country>
+        <image>ronaldo.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/ronaldo</url>
+        <totalGoals>136</totalGoals>
+    </player>
+    <player>
+        <id>8</id>
+        <age>33</age>
+        <name>Juan Mata</name>
+        <position>Midfielder</position>
+        <appearances>277</appearances>
+        <dob>28/04/1988</dob>
+        <joinedDate>25/01/2014</joinedDate>
+        <country>Spain</country>
+        <image>mata.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/juan-mata</url>
+        <totalGoals>51</totalGoals>
+    </player>
+    <player>
+        <id>9</id>
+        <age>26</age>
+        <name>Anthony Martial</name>
+        <position>Forward</position>
+        <appearances>269</appearances>
+        <dob>05/12/1995</dob>
+        <joinedDate>01/09/2015</joinedDate>
+        <country>France</country>
+        <image>martial.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/anthony-martial</url>
+        <totalGoals>79</totalGoals>
+    </player>
+    <player>
+        <id>10</id>
+        <age>24</age>
+        <name>Marcus Rashford</name>
+        <position>Forward</position>
+        <appearances>296</appearances>
+        <dob>31/10/1997</dob>
+        <joinedDate>01/07/2014</joinedDate>
+        <country>England</country>
+        <image>rashford.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/marcus-rashford</url>
+        <totalGoals>93</totalGoals>
+    </player>
+    <player>
+        <id>11</id>
+        <age>20</age>
+        <name>Mason Greenword</name>
+        <position>Forward</position>
+        <appearances>129</appearances>
+        <dob>01/10/2001</dob>
+        <joinedDate>01/07/2018</joinedDate>
+        <country>England</country>
+        <image>greenwood.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/mason-greenwood</url>
+        <totalGoals>35</totalGoals>
+    </player>
+    <player>
+        <id>13</id>
+        <age>39</age>
+        <name>Lee Grant</name>
+        <position>Goalkeeper</position>
+        <appearances>2</appearances>
+        <dob>27/01/1983</dob>
+        <joinedDate>03/07/2018</joinedDate>
+        <country>England</country>
+        <image>grant.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/lee-grant</url>
+        <totalGoals>0</totalGoals>
+    </player>
+    <player>
+        <id>14</id>
+        <age>29</age>
+        <name>Jesse Lingard</name>
+        <position>Midfielder</position>
+        <appearances>229</appearances>
+        <dob>15/12/1992</dob>
+        <joinedDate>01/07/2009</joinedDate>
+        <country>England</country>
+        <image>lingard.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/jesse-lingard</url>
+        <totalGoals>35</totalGoals>
+    </player>
+    <player>
+        <id>15</id>
+        <age>26</age>
+        <name>Andreas Pereira</name>
+        <position>Midfielder</position>
+        <appearances>75</appearances>
+        <dob>01/01/1996</dob>
+        <joinedDate>01/07/2012</joinedDate>
+        <country>Brazil</country>
+        <image>pereira.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/andreas-pereira</url>
+        <totalGoals>4</totalGoals>
+    </player>
+    <player>
+        <id>16</id>
+        <age>19</age>
+        <name>Amad Diallo</name>
+        <position>Forward</position>
+        <appearances>9</appearances>
+        <dob>11/07/2002</dob>
+        <joinedDate>07/01/2021</joinedDate>
+        <country>Ivory Coast</country>
+        <image>diallo.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/amad-diallo</url>
+        <totalGoals>1</totalGoals>
+    </player>
+
+    <player>
+        <id>17</id>
+        <age>29</age>
+        <name>Fred </name>
+        <position>Midfielder</position>
+        <appearances>151</appearances>
+        <dob>05/03/1993</dob>
+        <joinedDate>21/06/2018</joinedDate>
+        <country>Brazil</country>
+        <image>fred.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/fred</url>
+        <totalGoals>7</totalGoals>
+    </player>
+    <player>
+        <id>18</id>
+        <age>27</age>
+        <name>Bruno Fernandes</name>
+        <position>Midfielder</position>
+        <appearances>116</appearances>
+        <dob>08/09/1994</dob>
+        <joinedDate>30/09/2020</joinedDate>
+        <country>Portugal</country>
+        <image>fernandes.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/bruno-fernandes</url>
+        <totalGoals>49</totalGoals>
+
+    </player>
+
+    <player>
+        <id>19</id>
+        <age>28</age>
+        <name>Raphaël Varane</name>
+        <position>Defender</position>
+        <appearances>23</appearances>
+        <dob>25/04/1993</dob>
+        <joinedDate>14/08/2021</joinedDate>
+        <country>France</country>
+        <image>varane.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/raphael-varane</url>
+        <totalGoals>0</totalGoals>
+    </player>
+    <player>
+        <id>20</id>
+        <age>22</age>
+        <name>Diogo Dalot</name>
+        <position>Defender</position>
+        <appearances>56</appearances>
+        <dob>18/03/1999</dob>
+        <joinedDate>06/06/2018</joinedDate>
+        <country>Portugal</country>
+        <image>dalot.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/diogo-dalot</url>
+        <totalGoals>1</totalGoals>
+
+    </player>
+
+    <player>
+        <id>21</id>
+        <age>35</age>
+        <name>Edinson Cavani</name>
+        <position>Forward</position>
+        <appearances>55</appearances>
+        <dob>14/02/1987</dob>
+        <joinedDate>05/10/2020</joinedDate>
+        <country>Uruguay</country>
+        <image>cavani.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/edinson-cavani</url>
+        <totalGoals>19</totalGoals>
+    </player>
+
+    <player>
+        <id>22</id>
+        <age>35</age>
+        <name>Tom Heaton</name>
+        <position>Goalkeeper</position>
+        <appearances>1</appearances>
+        <dob>15/04/1986</dob>
+        <joinedDate>02/07/2021</joinedDate>
+        <country>England</country>
+        <image>heaton.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/tom-heaton</url>
+        <totalGoals>0</totalGoals>
+    </player>
+
+    <player>
+        <id>23</id>
+        <age>26</age>
+        <name>Luke Shaw</name>
+        <position>Defender</position>
+        <appearances>212</appearances>
+        <dob>12/07/1995</dob>
+        <joinedDate>27/06/2014</joinedDate>
+        <country>England</country>
+        <image>shaw.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/luke-shaw</url>
+        <totalGoals>3</totalGoals>
+    </player>
+
+    <player>
+        <id>25</id>
+        <age>21</age>
+        <name>Jadon Sancho</name>
+        <position>Forward</position>
+        <appearances>32</appearances>
+        <dob>25/03/2000</dob>
+        <joinedDate>23/07/2021</joinedDate>
+        <country>England</country>
+        <image>sancho.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/jadon-sancho</url>
+        <totalGoals>5</totalGoals>
+    </player>
+
+    <player>
+        <id>26</id>
+        <age>25</age>
+        <name>Dean Henderson</name>
+        <position>Goalkeeper</position>
+        <appearances>29</appearances>
+        <dob>12/03/1997</dob>
+        <joinedDate>01/08/2013</joinedDate>
+        <country>England</country>
+        <image>henderson.jpg</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/dean-henderson</url>
+        <totalGoals>12</totalGoals>
+    </player>
+    <player>
+        <id>27</id>
+        <age>29</age>
+        <name>Alex Telles</name>
+        <position>Defender</position>
+        <appearances>41</appearances>
+        <dob>15/12/1992</dob>
+        <joinedDate>05/10/2020</joinedDate>
+        <country>Brazil</country>
+        <image>telles.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/alex-telles</url>
+        <totalGoals>1</totalGoals>
+    </player>
+
+    <player>
+        <id>29</id>
+        <age>24</age>
+        <name>Aaron Wan-Bissaka</name>
+        <position>Defender</position>
+        <appearances>124</appearances>
+        <dob>26/11/1997</dob>
+        <joinedDate>29/06/2019</joinedDate>
+        <country>England</country>
+        <image>aaron.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/aaron-wan-bissaka</url>
+        <totalGoals>2</totalGoals>
+
+    </player>
+
+    <player>
+        <id>31</id>
+        <age>33</age>
+        <name>Nemenja Matic</name>
+        <position>Midfielder</position>
+        <appearances>180</appearances>
+        <dob>01/08/1988</dob>
+        <joinedDate>31/07/2017</joinedDate>
+        <country>Serbia</country>
+        <image>matic.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/nemanja-matic</url>
+        <totalGoals>4</totalGoals>
+    </player>
+
+
+    <player>
+        <id>34</id>
+        <age>24</age>
+        <name>Donny van de Beek</name>
+        <position>Midfielder</position>
+        <appearances>50</appearances>
+        <dob>18/04/1997</dob>
+        <joinedDate>02/09/2020</joinedDate>
+        <country>Netherlands</country>
+        <image>donny.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/donny-van-de-beek</url>
+        <totalGoals>2</totalGoals>
+
+    </player>
+
+    <player>
+        <id>39</id>
+        <age>25</age>
+        <name>Scott McTominay</name>
+        <position>Midfielder</position>
+        <appearances>163</appearances>
+        <dob>08/12/1996</dob>
+        <joinedDate>01/07/2012</joinedDate>
+        <country>Scotland</country>
+        <image>scott.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/scott-mctominay</url>
+        <totalGoals>16</totalGoals>
+    </player>
+
+</PlayerData>
