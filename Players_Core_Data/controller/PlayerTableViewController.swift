@@ -150,7 +150,12 @@ class PlayerTableViewController: UITableViewController, NSFetchedResultsControll
         //fill the cell with data
         cell.positionLabel.text = pManagedObject.position
         cell.nameLabel.text = pManagedObject.name
-        cell.playerImage.image = UIImage(named: pManagedObject.image!)
+        let img = UIImage(named: pManagedObject.image!)
+        if(img != nil ){
+            cell.playerImage.image = img
+        } else {
+            cell.playerImage.image = getImage(imageName: pManagedObject.image!)
+        }
         cell.numberLabel.text = pManagedObject.id
         
         return cell
@@ -159,6 +164,15 @@ class PlayerTableViewController: UITableViewController, NSFetchedResultsControll
         return 200
     }
 
+    func getImage(imageName: String) -> UIImage{
+        //get image from documents
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString
+        let imagePath = documentsPath.appendingPathComponent(imageName)
+        //make the image
+        let image = UIImage(contentsOfFile: imagePath)
+        return image!
+    }
+    
     
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {

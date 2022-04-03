@@ -59,13 +59,19 @@ class DetailsController: UIViewController {
             appearancesLabel.text = p.appearances! as String
             ageLabel.text = p.age
            goalsLabel.text = p.totalGoals!
-        playerImage.image = UIImage(named: p.image!)
+        
         if(p.country!.contains(" ")){
             let arrCountry = p.country!.components(separatedBy: " ")
             imgCountry = arrCountry[0].lowercased() + "_" + arrCountry[1].lowercased() + ".png"
         } else {
             imgCountry = p.country!.lowercased() + ".png"
         }
+            let image = UIImage(named: p.image!)
+            if image != nil {
+                playerImage.image = image
+            } else{
+                playerImage.image = getImage(imageName: p.image!)
+            }
         countryImage.image = UIImage(named: imgCountry)
         
         if p.position != "Goalkeeper"{
@@ -81,6 +87,21 @@ class DetailsController: UIViewController {
     }
     @IBAction func addFav(_ sender: Any) {
         addToFavourite(pManagedObject: p)
+        
+        /* [1]
+         Code bwlow is based on: Stackoverflow answer to Question: 'popping a view controller in different tab',
+         Gurprett Singh, https://stackoverflow.com/a/56472973
+         */
+        guard let VCS = self.navigationController?.viewControllers else {return }
+        for controller in VCS {
+            if controller.isKind(of: UITabBarController.self) {
+                let tabVC = controller as! UITabBarController
+                tabVC.selectedIndex = 1
+                self.navigationController?.popToRootViewController(animated: true)
+            }
+        }
+        //[1] END
+      
     }
     
     
@@ -142,9 +163,22 @@ class DetailsController: UIViewController {
 
 
 
+    func getImage(imageName: String) -> UIImage{
+        //get image from documents
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString
+        let imagePath = documentsPath.appendingPathComponent(imageName)
+        //make the image
+        let image = UIImage(contentsOfFile: imagePath)
+        return image!
+    }
 
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "favouriteSegue"{
+            let destination = segue.destination as! FavouriteTableViewController
 
+        }
+    }
 
 
 }
