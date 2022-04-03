@@ -90,6 +90,9 @@ class PlayerTableViewController: UITableViewController, NSFetchedResultsControll
         searchBar.delegate = self
         downloadMatch()
     }
+    override func viewDidAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
 
     func fetchPlayerData(query: String = ""){
         if query == "" {
@@ -277,7 +280,6 @@ class PlayerTableViewController: UITableViewController, NSFetchedResultsControll
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailSegue"{
             //get the new viewcontroller using sege.destination
-            
             let destination = segue.destination as! PlayerTabController
             let indexPath = tableView.indexPath(for: sender as! PlayerCell)
             pManagedObject = frc.object(at: indexPath!) as? Player

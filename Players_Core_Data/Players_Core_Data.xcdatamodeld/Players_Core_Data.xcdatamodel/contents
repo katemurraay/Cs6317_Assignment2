@@ -31,12 +31,11 @@
         <attribute name="team" optional="YES" attributeType="String"/>
         <attribute name="totalGoals" optional="YES" attributeType="String"/>
         <attribute name="url" optional="YES" attributeType="String"/>
-        <relationship name="matchPlayed" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Match"/>
         <relationship name="toFavourites" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Favourite" inverseName="player" inverseEntity="Favourite"/>
     </entity>
     <elements>
         <element name="Favourite" positionX="-54" positionY="90" width="128" height="59"/>
-        <element name="Player" positionX="-54" positionY="-9" width="128" height="239"/>
         <element name="Match" positionX="-45" positionY="99" width="128" height="209"/>
+        <element name="Player" positionX="-54" positionY="-9" width="128" height="224"/>
     </elements>
 </model>
