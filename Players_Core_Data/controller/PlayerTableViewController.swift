@@ -19,7 +19,7 @@ class PlayerTableViewController: UITableViewController, NSFetchedResultsControll
     
     func makeRequest()->NSFetchRequest<NSFetchRequestResult>{
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Player")
-        let sorter = NSSortDescriptor(key: "id", ascending: true)
+        let sorter = NSSortDescriptor(key: "position", ascending: true)
         request.sortDescriptors = [sorter]
         return request
     }
