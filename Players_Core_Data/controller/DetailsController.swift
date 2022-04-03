@@ -31,6 +31,8 @@ class DetailsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let tabBar = tabBarController as! PlayerTabController
+        p = tabBar.p
         
         if p != nil {
             
@@ -182,3 +184,4 @@ class DetailsController: UIViewController {
 
 
 }
+

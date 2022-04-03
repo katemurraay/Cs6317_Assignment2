@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MatchStatistics>
+<match>
+    <playerId>1</playerId>
+    <name>Man Utd VS Liverpool</name>
+    <date>24/10/2021 </date>
+    <passes>12 </passes>
+    <nopasses>6 </nopasses>
+    <tackles> 0</tackles>
+    <tacklesWon>0 </tacklesWon>
+    <duels>0 </duels>
+    <duelsWon> 0</duelsWon>
+    <interceptions>0 </interceptions>
+    <interceptionsWon> 0</interceptionsWon>
+    <minutesPlayed>90</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard> 0</yellowCard>
+</match>
+
+<match>
+    <playerId>2</playerId>
+    <name>Man Utd VS Liverpool</name>
+    <date>24/10/2021 </date>
+    <passes>42 </passes>
+    <nopasses>7 </nopasses>
+    <tackles> 0</tackles>
+    <tacklesWon>0 </tacklesWon>
+    <duels> 3</duels>
+    <duelsWon> 2</duelsWon>
+    <interceptions> 1</interceptions>
+    <interceptionsWon>1 </interceptionsWon>
+    <minutesPlayed>90</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard> 0</yellowCard>
+</match>
+
+<match>
+    <playerId>3</playerId>
+    <name>Man Utd VS West Ham</name>
+    <date> 22/09/2021</date>
+    <passes> 69</passes>
+    <nopasses> 5</nopasses>
+    <tackles> 5</tackles>
+    <tacklesWon> 1 </tacklesWon>
+    <duels>19 </duels>
+    <duelsWon>13 </duelsWon>
+     <interceptions>0 </interceptions>
+    <interceptionsWon>0 </interceptionsWon>
+    <minutesPlayed> 90</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard> 0</yellowCard>
+</match>
+
+<match>
+    <playerId>4</playerId>
+    <name>Tranmere VS Man Utd</name>
+    <date>26/01/2020 </date>
+    <passes>35 </passes>
+    <nopasses>7 </nopasses>
+    <tackles> 2</tackles>
+    <tacklesWon> 2</tacklesWon>
+    <duels> 13</duels>
+    <duelsWon>7 </duelsWon>
+    <interceptions> 2</interceptions>
+    <interceptionsWon>2 </interceptionsWon>
+    <minutesPlayed> 90</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>1 </yellowCard>
+</match>
+
+<match>
+    <playerId>5</playerId>
+    <name>Man Utd VS Liverpool</name>
+    <date>24/10/2021 </date>
+    <passes> 47</passes>
+    <nopasses> 7</nopasses>
+    <tackles> 1</tackles>
+    <tacklesWon>0 </tacklesWon>
+    <duels> 8</duels>
+    <duelsWon>6 </duelsWon>
+    <interceptions> 0</interceptions>
+    <interceptionsWon>0 </interceptionsWon>
+    <minutesPlayed> 90</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>1 </yellowCard>
+</match>
+
+<match>
+    <playerId>6</playerId>
+    <name>Man Utd VS Liverpool</name>
+    <date>24/10/2021 </date>
+    <passes> 12</passes>
+    <nopasses>4 </nopasses>
+    <tackles> 0</tackles>
+    <tacklesWon> 0</tacklesWon>
+    <duels> 3</duels>
+    <duelsWon> 1</duelsWon>
+    <interceptions> 1</interceptions>
+    <interceptionsWon> 1</interceptionsWon>
+    <minutesPlayed> 15</minutesPlayed>
+    <redCard> 1</redCard>
+    <yellowCard>0 </yellowCard>
+</match>
+
+<match>
+    <playerId>8</playerId>
+    <name>Man Utd VS West Ham</name>
+    <date>22/09/2021</date>
+    <passes>26</passes>
+    <nopasses>6 </nopasses>
+    <tackles> 1</tackles>
+    <tacklesWon>0 </tacklesWon>
+    <duels> 6</duels>
+    <duelsWon>3 </duelsWon>
+    <interceptions> 0</interceptions>
+    <interceptionsWon>0 </interceptionsWon>
+    <minutesPlayed> 62</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>0 </yellowCard>
+</match>
+<match>
+    <playerId>7</playerId>
+    <name>Man Utd VS Liverpool</name>
+    <date>24/10/2021 </date>
+    <passes>25 </passes>
+    <nopasses>4 </nopasses>
+    <thirdPasses>9</thirdPasses>
+    <thirdNoPasses>0 </thirdNoPasses>
+    <tackles> 0</tackles>
+    <tacklesWon>0 </tacklesWon>
+    <duels> 5</duels>
+    <duelsWon>1 </duelsWon>
+    <interceptions> 0</interceptions>
+    <interceptionsWon>0 </interceptionsWon>
+    <minutesPlayed>90 </minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>1 </yellowCard>
+</match>
+
+
+<match>
+    <playerId>9</playerId>
+    <name>Man Utd VS Everton</name>
+    <date>02/10/2021</date>
+    <passes>34</passes>
+    <nopasses>4 </nopasses>
+    <tackles> 0</tackles>
+    <tacklesWon> 0</tacklesWon>
+    <duels> 6</duels>
+    <duelsWon>1 </duelsWon>
+<interceptions>0</interceptions>
+     <interceptionsWon>0 </interceptionsWon>
+    <minutesPlayed> 57</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>0 </yellowCard>
+</match>
+<match>
+    <playerId>10</playerId>
+    <name>Man Utd VS Liverpool</name>
+    <date>24/10/2021 </date>
+    <passes>13 </passes>
+    <nopasses> 6</nopasses>
+    <tackles> 0</tackles>
+    <tacklesWon>0 </tacklesWon>
+    <duels> 8</duels>
+    <duelsWon>5 </duelsWon>
+    <interceptions>0 </interceptions>
+    <interceptionsWon>0 </interceptionsWon>
+    <minutesPlayed> 62</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>0 </yellowCard>
+</match>
+<match>
+    <playerId>11</playerId>
+    <name>Man Utd VS Liverpool</name>
+    <date>24/10/2021 </date>
+    <passes>10 </passes>
+    <nopasses> 3</nopasses>
+    <tackles> 0</tackles>
+    <tacklesWon>0 </tacklesWon>
+    <duels> 0</duels>
+    <duelsWon>0 </duelsWon>
+    <interceptions> 1</interceptions>
+    <interceptionsWon>1 </interceptionsWon>
+    <minutesPlayed> 45</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard> 0</yellowCard>
+</match>
+
+<match>
+    <playerId>13</playerId>
+    <name>QPR VS Man Utd</name>
+    <date>24/07/2021</date>
+    <passes>5</passes>
+    <nopasses>1 </nopasses>
+    <tackles> 0</tackles>
+    <tacklesWon>0 </tacklesWon>
+    <duels> 0</duels>
+    <duelsWon>0 </duelsWon>
+     <interceptions>0 </interceptions>
+    <interceptionsWon>0 </interceptionsWon>
+    <minutesPlayed> 45</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>0 </yellowCard>
+</match>
+
+<match>
+    <playerId>14</playerId>
+    <name>Leicester VS Man Utd</name>
+    <date>16/10/2021 </date>
+    <passes> 7</passes>
+    <nopasses>3</nopasses>
+    <tackles> 2</tackles>
+    <tacklesWon>2 </tacklesWon>
+    <duels> 2</duels>
+    <duelsWon> 2</duelsWon>
+    <interceptions> 0</interceptions>
+    <interceptionsWon>0 </interceptionsWon>
+    <minutesPlayed>10 </minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>0 </yellowCard>
+</match>
+
+<match>
+    <playerId>15</playerId>
+    <name>Man Utd VS Everton</name>
+    <date>07/08/2021 </date>
+    <passes> 9</passes>
+    <nopasses> 1</nopasses>
+    <tackles> 0</tackles>
+    <tacklesWon>0 </tacklesWon>
+    <duels> 4</duels>
+    <duelsWon>2 </duelsWon>
+    <interceptions> 0</interceptions>
+    <interceptionsWon>0 </interceptionsWon>
+    <minutesPlayed> 30</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>0 </yellowCard>
+</match>
+<match>
+    <playerId>16</playerId>
+    <name>Wolves VS Man Utd</name>
+    <date>23/05/2021 </date>
+    <passes>37 </passes>
+    <nopasses>3 </nopasses>
+    <tackles> 2</tackles>
+    <tacklesWon>2 </tacklesWon>
+    <duels>15 </duels>
+    <duelsWon>8 </duelsWon>
+    <interceptions> 0</interceptions>
+    <interceptionsWon>0 </interceptionsWon>
+    <minutesPlayed> 82</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>0 </yellowCard>
+</match>
+<match>
+    <playerId>17</playerId>
+    <name>Man Utd VS Liverpool</name>
+    <date>24/10/2021 </date>
+    <passes> 43</passes>
+    <nopasses>12 </nopasses>
+     <tackles> 0</tackles>
+    <tacklesWon>0 </tacklesWon>
+    <duels> 5</duels>
+    <duelsWon>2 </duelsWon>
+   <interceptions> 1</interceptions>
+    <interceptionsWon>1 </interceptionsWon>
+    <minutesPlayed> 90</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>1 </yellowCard>
+</match>
+<match>
+    <playerId>18</playerId>
+    <name>Man Utd VS Liverpool</name>
+    <date>24/10/2021</date>
+    <passes>29 </passes>
+    <nopasses> 5</nopasses>
+    <tackles> 1</tackles>
+    <tacklesWon> 1</tacklesWon>
+    <duels>5 </duels>
+    <duelsWon> 4</duelsWon>
+    <interceptions> 0</interceptions>
+    <interceptionsWon>0 </interceptionsWon>
+    <minutesPlayed> 62</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>1 </yellowCard>
+</match>
+<match>
+    <playerId>19</playerId>
+    <name>Man Utd VS Everton</name>
+    <date>02/10/2021</date>
+    <passes> 66</passes>
+    <nopasses> 9</nopasses>
+    <tackles>0</tackles>
+    <tacklesWon>0 </tacklesWon>
+    <duels> 6</duels>
+    <duelsWon>3 </duelsWon>
+     <interceptions>0 </interceptions>
+    <interceptionsWon>0 </interceptionsWon>
+    <minutesPlayed> 90</minutesPlayed>
+    <redCard>0 </redCard>
+    <yellowCard>0 </yellowCard>
+</match>
+<match>
+    <playerId>20</playerId>
+    <name>Man Utd VS Liverpool</name>
+    <date>24/10/2021 </date>
+    <passes> 5</passes>
+    <nopasses> 2</nopasses>
+    <tackles> 0</tackles>
+    <tacklesWon> 0</tacklesWon>
+    <duels>5 </duels>
+    <duelsWon> 0</duelsWon>
+    <interceptions> 1</interceptions>
+    <interceptionsWon>1 </interceptionsWon>
+    <minutesPlayed> 28</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>0 </yellowCard>
+</match>
+<match>
+    <playerId>21</playerId>
+    <name>Man Utd VS Liverpool</name>
+    <date>24/10/2021 </date>
+    <passes>5 </passes>
+    <nopasses> 1</nopasses>
+    <tackles> 0</tackles>
+    <tacklesWon>0 </tacklesWon>
+    <duels>1 </duels>
+    <duelsWon> 0</duelsWon>
+    <interceptions>2 </interceptions>
+    <interceptionsWon>2 </interceptionsWon>
+    <minutesPlayed> 28</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard> 0</yellowCard>
+</match>
+<match>
+    <playerId>22</playerId>
+    <name>Man Utd VS Brentford</name>
+    <date>28/07/2021 </date>
+    <passes> 22</passes>
+    <nopasses> 5</nopasses>
+    <tackles> 0</tackles>
+    <tacklesWon>0 </tacklesWon>
+    <duels> 0</duels>
+    <duelsWon> 0</duelsWon>
+   <interceptions> 0</interceptions>
+    <interceptionsWon>0 </interceptionsWon>
+    <minutesPlayed>90 </minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>0 </yellowCard>
+</match>
+<match>
+    <playerId>23</playerId>
+    <name>Man Utd VS Liverpool</name>
+    <date>24/10/2021 </date>
+    <passes>31 </passes>
+    <nopasses>9 </nopasses>
+    <tackles>1 </tackles>
+    <tacklesWon>1 </tacklesWon>
+    <duels> 6</duels>
+    <duelsWon>4 </duelsWon>
+     <interceptions> 0</interceptions>
+    <interceptionsWon>0 </interceptionsWon>
+    <minutesPlayed> 90</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>1 </yellowCard>
+</match>
+<match>
+    <playerId>25</playerId>
+    <name>Man Utd VS Atalanta</name>
+    <date>20/10/2021 </date>
+    <passes> 10</passes>
+    <nopasses>1 </nopasses>
+    <tackles> 2</tackles>
+    <tacklesWon>0 </tacklesWon>
+    <duels> 3</duels>
+    <duelsWon>2 </duelsWon>
+    <interceptions> 0</interceptions>
+    <interceptionsWon>0 </interceptionsWon>
+    <minutesPlayed> 17</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard> 0</yellowCard>
+</match>
+<match>
+    <playerId>27</playerId>
+    <name>Man Utd VS Villarreal</name>
+    <date>29/09/2021</date>
+    <passes>56</passes>
+    <nopasses>5 </nopasses>
+    <tackles> 0</tackles>
+    <tacklesWon>0 </tacklesWon>
+    <duels> 7</duels>
+    <duelsWon>5 </duelsWon>
+    <interceptions>0 </interceptions>
+    <interceptionsWon>0 </interceptionsWon>
+    <minutesPlayed> 89</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>1 </yellowCard>
+</match>
+<match>
+    <playerId>29</playerId>
+    <name>Man Utd VS Liverpool</name>
+    <date>24/10/2021 </date>
+    <passes> 28</passes>
+    <nopasses> 3</nopasses>
+    <tackles> 1</tackles>
+    <tacklesWon>1 </tacklesWon>
+    <duels> 12</duels>
+    <duelsWon>7 </duelsWon>
+    <interceptions> 2</interceptions>
+    <interceptionsWon>2 </interceptionsWon>
+    <minutesPlayed> 90</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>1 </yellowCard>
+</match>
+<match>
+    <playerId>26</playerId>
+    <name>Man Utd VS West Ham</name>
+    <date>22/09/2021 </date>
+    <passes> 18</passes>
+    <nopasses> 5</nopasses>
+     <tackles> 0</tackles>
+    <tacklesWon>0 </tacklesWon>
+    <duels> 0</duels>
+    <duelsWon>0 </duelsWon>
+    <interceptions> 0</interceptions>
+    <interceptionsWon>0 </interceptionsWon>
+    <minutesPlayed>90 </minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>0 </yellowCard>
+</match>
+<match>
+    <playerId>31</playerId>
+    <name>Man Utd VS Atalanta</name>
+    <date>20/10/2021 </date>
+    <passes> 1</passes>
+    <nopasses> 3</nopasses>
+    <tackles>0 </tackles>
+    <tacklesWon>0 </tacklesWon>
+    <duels> 0</duels>
+    <duelsWon> 0</duelsWon>
+    <interceptions> 0</interceptions>
+    <interceptionsWon>0 </interceptionsWon>
+    <minutesPlayed> 2</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>1 </yellowCard>
+</match>
+<match>
+    <playerId>34</playerId>
+    <name>Man Utd VS West Ham</name>
+    <date>22/09/2021 </date>
+    <passes>54 </passes>
+    <nopasses>10 </nopasses>
+    <tackles>2 </tackles>
+    <tacklesWon>2 </tacklesWon>
+    <duels> 12</duels>
+    <duelsWon> 3</duelsWon>
+    <interceptions> 1</interceptions>
+    <interceptionsWon>1 </interceptionsWon>
+    <minutesPlayed>90 </minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>0</yellowCard>
+</match>
+<match>
+    <playerId>39</playerId>
+    <name>Man Utd VS Liverpool</name>
+    <date>24/10/2021</date>
+    <passes>32 </passes>
+    <nopasses>6 </nopasses>
+    <tackles> 1</tackles>
+    <tacklesWon>0 </tacklesWon>
+    <duels> 9</duels>
+    <duelsWon>6 </duelsWon>
+    <interceptions>2 </interceptions>
+    <interceptionsWon>2 </interceptionsWon>
+    <minutesPlayed> 90</minutesPlayed>
+    <redCard> 0</redCard>
+    <yellowCard>0 </yellowCard>
+</match>
+
+
+
+</MatchStatistics>

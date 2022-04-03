@@ -4,6 +4,20 @@
         <attribute name="userId" optional="YES" attributeType="String"/>
         <relationship name="player" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Player" inverseName="toFavourites" inverseEntity="Player"/>
     </entity>
+    <entity name="Match" representedClassName="Match" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="duels" optional="YES" attributeType="String"/>
+        <attribute name="duelsWon" optional="YES" attributeType="String"/>
+        <attribute name="minutesPlayed" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="noPasses" optional="YES" attributeType="String"/>
+        <attribute name="passes" optional="YES" attributeType="String"/>
+        <attribute name="playerId" optional="YES" attributeType="String"/>
+        <attribute name="redCards" optional="YES" attributeType="String"/>
+        <attribute name="tackles" optional="YES" attributeType="String"/>
+        <attribute name="tacklesWon" optional="YES" attributeType="String"/>
+        <attribute name="yellowCards" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="Player" representedClassName="Player" syncable="YES">
         <attribute name="age" optional="YES" attributeType="String"/>
         <attribute name="appearances" optional="YES" attributeType="String"/>
@@ -17,10 +31,12 @@
         <attribute name="team" optional="YES" attributeType="String"/>
         <attribute name="totalGoals" optional="YES" attributeType="String"/>
         <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="matchPlayed" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Match"/>
         <relationship name="toFavourites" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Favourite" inverseName="player" inverseEntity="Favourite"/>
     </entity>
     <elements>
         <element name="Favourite" positionX="-54" positionY="90" width="128" height="59"/>
-        <element name="Player" positionX="-54" positionY="-9" width="128" height="224"/>
+        <element name="Player" positionX="-54" positionY="-9" width="128" height="239"/>
+        <element name="Match" positionX="-45" positionY="99" width="128" height="209"/>
     </elements>
 </model>

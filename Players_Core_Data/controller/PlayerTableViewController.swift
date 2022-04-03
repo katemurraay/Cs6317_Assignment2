@@ -30,6 +30,50 @@ class PlayerTableViewController: UITableViewController, NSFetchedResultsControll
         
     }
     
+    func downloadMatch() {
+        DispatchQueue.global(qos: .background).async {
+            if(self.makeMatchRequest()){
+                print("match populated")
+            } else{
+                self.fetchMatches()
+                         
+            }
+        }
+    }
+    
+    
+    func fetchMatches(){
+        if let path = Bundle.main.path(forResource: "matches", ofType: "xml") {
+            let xmlData = try! NSData(contentsOfFile: path) as Data
+            let parser = DataParser (data: xmlData)
+           
+            
+            if parser.parse(){
+                //make frc and set it up with the table
+                print("match data Collected")
+            }
+           
+            
+        }
+    }
+    
+    func makeMatchRequest()-> Bool{
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Match")
+        fetchRequest.fetchLimit =  1
+    
+
+        do {
+            let results = try context.fetch(fetchRequest)
+            if results.count > 0 {
+                print("found Match")
+                return true
+            }}
+            catch let error as NSError {
+                print("Could not fetch. \(error), \(error.userInfo)")
+            }
+        return false
+    }
+    
     func makeQueryRequest(query: String)->NSFetchRequest<NSFetchRequestResult>{
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Player")
         let sorter = NSSortDescriptor(key: "id", ascending: true)
@@ -41,8 +85,10 @@ class PlayerTableViewController: UITableViewController, NSFetchedResultsControll
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+   
         fetchPlayerData()
         searchBar.delegate = self
+        downloadMatch()
     }
 
     func fetchPlayerData(query: String = ""){
@@ -232,10 +278,7 @@ class PlayerTableViewController: UITableViewController, NSFetchedResultsControll
         if segue.identifier == "detailSegue"{
             //get the new viewcontroller using sege.destination
             
-
-            let destination = segue.destination as! DetailsController
-
-            
+            let destination = segue.destination as! PlayerTabController
             let indexPath = tableView.indexPath(for: sender as! PlayerCell)
             pManagedObject = frc.object(at: indexPath!) as? Player
           

@@ -28,14 +28,17 @@ class DataParser: XMLParser {
     var duelsWon = String(); var redCard = String(); var yellowCard = String();
     var passes = String(); var noPasses = String(); var tacklesWon = String();
     var intercepts = String(); var interceptsWon = String(); var minutesPlayed = String()
-
+    var p: Player = Player()
     
     var match = false
     override init (data: Data){
         super.init(data: data)
         self.delegate = self
-        
-     
+       
+    }
+    
+    func setPlayer(p: Player){
+        self.p = p
     }
 }
 
@@ -108,6 +111,21 @@ extension DataParser: XMLParserDelegate
             tmp.setValue(dob, forKey: "dob")
             tmp.setValue(totalGoals, forKey: "totalGoals")
             tmp.setValue(appearances, forKey: "appearances")
+        } else if  elementName == "match"{
+            let tmp = NSEntityDescription.insertNewObject(forEntityName: "Match", into: context)
+            tmp.setValue(name, forKey: "name")
+            tmp.setValue(date, forKey: "date")
+            tmp.setValue(passes, forKey: "passes")
+            tmp.setValue(noPasses, forKey: "noPasses")
+            tmp.setValue(minutesPlayed, forKey: "minutesPlayed")
+            tmp.setValue(redCard, forKey: "redCards")
+            tmp.setValue(yellowCard, forKey: "yellowCards")
+            tmp.setValue(duels, forKey: "duels")
+            tmp.setValue(duelsWon, forKey: "duelsWon")
+            tmp.setValue(tackles, forKey: "tackles")
+            tmp.setValue(tacklesWon, forKey: "tacklesWon")
+            tmp.setValue(id, forKey: "playerId")
+            
         }
         do {try context.save()}
         catch  {print("Error")}
