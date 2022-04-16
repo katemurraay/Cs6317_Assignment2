@@ -21,14 +21,37 @@ class PlayerTableViewController: UITableViewController, NSFetchedResultsControll
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Player")
         let sorter = NSSortDescriptor(key: "position", ascending: true)
         request.sortDescriptors = [sorter]
+        request.fetchOffset = 0
         return request
     }
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        tableView.reloadData()
-     
-        
+        //tableView.reloadData()
+    
         
     }
+    
+    
+    
+    func makeQueryRequest(query: String)->NSFetchRequest<NSFetchRequestResult>{
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Player")
+        let sorter = NSSortDescriptor(key: "position", ascending: true)
+        request.predicate = NSPredicate(format: "%K == %@ OR %K == %@", argumentArray:["name", query, "position", query])
+        request.sortDescriptors = [sorter]
+        request.fetchOffset = 0
+        return request
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        fetchPlayerData()
+        searchBar.delegate = self
+        downloadMatch()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
+    
     
     func downloadMatch() {
         DispatchQueue.global(qos: .background).async {
@@ -46,8 +69,6 @@ class PlayerTableViewController: UITableViewController, NSFetchedResultsControll
         if let path = Bundle.main.path(forResource: "matches", ofType: "xml") {
             let xmlData = try! NSData(contentsOfFile: path) as Data
             let parser = DataParser (data: xmlData)
-           
-            
             if parser.parse(){
                 //make frc and set it up with the table
                 print("match data Collected")
@@ -73,47 +94,45 @@ class PlayerTableViewController: UITableViewController, NSFetchedResultsControll
             }
         return false
     }
-    
-    func makeQueryRequest(query: String)->NSFetchRequest<NSFetchRequestResult>{
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Player")
-        let sorter = NSSortDescriptor(key: "id", ascending: true)
-        request.predicate = NSPredicate(format: "%K == %@ OR %K == %@", argumentArray:["name", query, "position", query])
-        request.sortDescriptors = [sorter]
-        return request
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-   
-        fetchPlayerData()
-        searchBar.delegate = self
-        downloadMatch()
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        tableView.reloadData()
-    }
 
     func fetchPlayerData(query: String = ""){
-        if query == "" {
-            frc = NSFetchedResultsController(fetchRequest: makeRequest(), managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
-            
-            
-        } else {
-            frc = NSFetchedResultsController(fetchRequest: makeQueryRequest(query: query), managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        var playerFound = false
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Player")
+        fetchRequest.fetchLimit =  1
+        do {let results = try context.fetch(fetchRequest)
+        if results.count > 0 {
+            if query == "" {
+           
+                frc = NSFetchedResultsController(fetchRequest: makeRequest(), managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+                playerFound = true
+            } else {
+                frc = NSFetchedResultsController(fetchRequest: makeQueryRequest(query: query), managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+                playerFound = true
+            }
+            frc.delegate = self
         }
+            
+        }catch let error as NSError {
+                print("Could not fetch. \(error), \(error.userInfo)")
+            }
+            
         
-        frc.delegate = self
         
+
+       
+        if playerFound {
         //fetch
         do{
             try frc.performFetch()
-            if frc.sections![0].numberOfObjects == 0{
-                loadData()
-            }
+            
+            print(frc.sections![0].numberOfObjects)
         }
         catch{
             print("frc cannot fetch")
+        }
+            
+        } else{
+            loadData()
         }
         
     }
@@ -121,43 +140,7 @@ class PlayerTableViewController: UITableViewController, NSFetchedResultsControll
     @IBOutlet weak var searchBar: UISearchBar!
     
     
-    
-    func removeAllData(){
-        
-        let fetchRequest: NSFetchRequest<NSFetchRequestResult>
-        fetchRequest = NSFetchRequest(entityName: "Player")
 
-        
-        let deleteRequest = NSBatchDeleteRequest(
-            fetchRequest: fetchRequest
-        )
-
-     
-        deleteRequest.resultType = .resultTypeObjectIDs
-
-        // Get a reference to a managed object context
-        
-
-        // Perform the batch delete
-        let batchDelete = try! context.execute(deleteRequest)
-            as? NSBatchDeleteResult
-        
-
-        guard let deleteResult = batchDelete?.result
-            as? [NSManagedObjectID]
-            else { return }
-
-        let deletedObjects: [AnyHashable: Any] = [
-            NSDeletedObjectsKey: deleteResult
-        ]
-
-        // Merge the delete changes into the managed
-        // object context
-        NSManagedObjectContext.mergeChanges(
-            fromRemoteContextSave: deletedObjects,
-            into: [context]
-        )
-    }
     func loadData(){
         
         if let path = Bundle.main.path(forResource: "players", ofType: "xml") {
@@ -309,10 +292,7 @@ extension PlayerTableViewController: UISearchBarDelegate{
         }
     }
     
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        fetchPlayerData()
-        tableView.reloadData()
-    }
+    
     
 
     

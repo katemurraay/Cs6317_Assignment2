@@ -124,7 +124,6 @@ class FavouriteTableViewController: UITableViewController, NSFetchedResultsContr
                     } else{
                         cell.playerImage.image = getImage(imageName: player.image!)
                     }
-                    cell.playerImage.image = UIImage(named: player.image!)
                     cell.numberLabel.text = player.id
                     
                 }

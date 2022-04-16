@@ -96,8 +96,6 @@ extension DataParser: XMLParserDelegate
         let appDel: AppDelegate = (UIApplication.shared.delegate as! AppDelegate)
         let context: NSManagedObjectContext = appDel.persistentContainer.viewContext
         if elementName == "player" {
-            
-
             let tmp = NSEntityDescription.insertNewObject(forEntityName: "Player", into: context) 
             tmp.setValue(id, forKey: "id")
             tmp.setValue(name, forKey: "name")

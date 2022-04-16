@@ -61,6 +61,7 @@ class UpdateViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     
     
+    
     @IBAction func changeImage(_ sender: Any) {
         //setup Picker Controller
         pickerController.delegate = self
@@ -89,10 +90,26 @@ class UpdateViewController: UIViewController, UIImagePickerControllerDelegate, U
             playerImage.image = image
             
         }
+        else {
+            playerImage.image = getImage(imageName: pManagedObject.image!)
+        }
+        
         goalsTextField.text = pManagedObject.totalGoals
         appearancesTextField.text = pManagedObject.appearances
         
     }
+    
+    func getImage(imageName: String) -> UIImage{
+        //get image from documents
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString
+        let imagePath = documentsPath.appendingPathComponent(imageName)
+        //make the image
+        let image = UIImage(contentsOfFile: imagePath)
+        return image!
+    }
+    
+    
+    
     @IBAction func updatePlayer(_ sender: Any) {
         name = nameTextField.text!
         appearances = appearancesTextField.text!
@@ -102,10 +119,8 @@ class UpdateViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         let image = playerImage.image
         if (imageChanged && image != nil) {
-            let name = nameTextField.text
-            let fullNameArr = name!.components(separatedBy: " ")
-            var imageName = fullNameArr[0]
-            imageName = imageName.lowercased() + ".png"
+            var imageName = pManagedObject.id!
+            imageName = imageName + ".png"
             pimage = imageName
             putImage(imageName: imageName)
         } else{
@@ -124,7 +139,7 @@ class UpdateViewController: UIViewController, UIImagePickerControllerDelegate, U
          dateFormatter.dateFormat = "dd/MM/yyyy"
         dob = dateFormatter.string(from: dobPicker.date)
        
-        updatePlayer()
+        savePlayer()
         
         /* [1]
          Code bwlow is based on: Stackoverflow answer to Question: 'popping a view controller in different tab',
@@ -154,7 +169,7 @@ class UpdateViewController: UIViewController, UIImagePickerControllerDelegate, U
      Code below is based on StackOverflow Answer to Question: "How do you update a CoreData entry that has already been saved in Swift?",
      Devbot10,https://stackoverflow.com/a/48089530
     */
-    func updatePlayer(){
+    func savePlayer(){
         //fill pManaged object with data from fields
         
         
