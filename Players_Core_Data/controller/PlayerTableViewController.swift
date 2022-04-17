@@ -25,7 +25,7 @@ class PlayerTableViewController: UITableViewController, NSFetchedResultsControll
         return request
     }
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        //tableView.reloadData()
+        tableView.reloadData()
     
         
     }

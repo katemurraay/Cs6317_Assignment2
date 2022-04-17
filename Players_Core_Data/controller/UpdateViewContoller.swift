@@ -74,6 +74,7 @@ class UpdateViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         positionPicker.delegate = self
         positionPicker.dataSource = self
         let index = positions.firstIndex(of: pManagedObject.position! )!

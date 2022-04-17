@@ -106,7 +106,7 @@ class FavouriteTableViewController: UITableViewController, NSFetchedResultsContr
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "favCell", for: indexPath) as! PlayerCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "favCell", for: indexPath) as! FavouriteCell
 
         // Configure the cell...
        
@@ -118,13 +118,25 @@ class FavouriteTableViewController: UITableViewController, NSFetchedResultsContr
                     //fill the cell with data
                     cell.positionLabel.text = player.position
                     cell.nameLabel.text = player.name
+                   
+                    let view = cell.imageBackground
+                    view?.backgroundColor = .white
+                    cell.playerImage.contentMode = UIView.ContentMode.scaleAspectFill
+                    cell.playerImage.frame.size.width = 150
+                    cell.playerImage.frame.size.height = 150
                     let img  = UIImage(named: player.image!)
                     if img != nil {
                         cell.playerImage.image = img
                     } else{
+                        
                         cell.playerImage.image = getImage(imageName: player.image!)
                     }
-                    cell.numberLabel.text = player.id
+                    cell.playerImage.layer.cornerRadius = 75
+                    cell.playerImage.clipsToBounds = true
+                    cell.playerImage.layer.borderWidth = 3
+                    cell.playerImage.layer.borderColor = UIColor.orange.cgColor
+                    view?.addSubview(cell.playerImage)
+                    cell.imageBackground = view
                     
                 }
             
@@ -206,7 +218,7 @@ class FavouriteTableViewController: UITableViewController, NSFetchedResultsContr
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailSegue"{
             //get the new viewcontroller using sege.destination
-            let indexPath = tableView.indexPath(for: sender as! PlayerCell)
+            let indexPath = tableView.indexPath(for: sender as! FavouriteCell)
             let players = fManagedObject.player?.allObjects
                 if players != nil {
                     let destination = segue.destination as! PlayerTabController
